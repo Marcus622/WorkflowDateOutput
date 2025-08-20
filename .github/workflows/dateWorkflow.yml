@@ -1,0 +1,12 @@
+name: dateWorkflow
+
+on:
+    push
+
+jobs:
+    firstJob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: meinErster Schritt
+              run: echo "Hallo, dies ist der erste Schritt!"
+      
