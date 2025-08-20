@@ -16,5 +16,11 @@ jobs:
         steps:
             - name: print date
               run: date
-      
+
+    thirdJob:
+        needs: secondJob
+        runs-on: ubuntu-latest
+        steps:
+            - name: print formated date 
+              run: date +"%Y-%m-%d %H:%M:%S"
     
