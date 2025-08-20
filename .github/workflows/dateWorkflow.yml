@@ -8,5 +8,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: meinErster Schritt
-              run: echo "Hallo, dies ist der erste Schritt!"
+              run: echo "Hallo Suheib, dies ist der erste Schritt!"
+
+    secondJob:
+        needs: firstJob
+        runs-on: ubuntu-latest
+        steps:
+            - name: print date
+              run: date
       
+    
